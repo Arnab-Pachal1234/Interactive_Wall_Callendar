@@ -18,7 +18,7 @@ LumiCal transcends the standard date-picker. It is designed to emulate the tacti
 
 ## 🛠️ Tech Stack
 
-* **Framework:** React 18 / [Next.js](https://nextjs.org/) (App Router)
+* **Framework:** [Next.js](https://nextjs.org/) (App Router)
 * **Styling:** [Tailwind CSS](https://tailwindcss.com/)
 * **Animations:** [Framer Motion](https://www.framer.com/motion/)
 * **Icons:** [Lucide React](https://lucide.dev/)
@@ -35,8 +35,8 @@ Make sure you have Node.js (v18 or higher) installed.
 
 1. **Clone the repository:**
    ```bash
-   git clone [https://github.com/yourusername/lumical.git](https://github.com/yourusername/lumical.git)
-   cd lumical
+   git clone [https://github.com/yourusername/lumical.git](https://github.com/Arnab-Pachal1234/Interactive_Wall_Callendar)
+   cd my-calendar-app
    npm install
    npm run dev
 2. Navigate to http://localhost:3000 in your browser.
