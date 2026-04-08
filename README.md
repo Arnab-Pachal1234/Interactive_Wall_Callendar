@@ -2,7 +2,8 @@
 
 > A highly interactive, beautifully animated wall calendar component built with Next.js, Framer Motion, and Tailwind CSS. 
 
-![LumiCal Preview](https://via.placeholder.com/1000x500?text=Insert+a+screenshot+of+LumiCal+here)
+<img width="1920" height="1080" alt="image" src="https://github.com/user-attachments/assets/561205c8-4fab-4103-bdba-21b6dfcfd49e" />
+
 
 LumiCal transcends the standard date-picker. It is designed to emulate the tactile and aesthetic experience of a physical wall calendar, complete with dynamic seasonal themes, smooth page-turning animations, and a powerful range-based event tracking system.
 
@@ -57,4 +58,4 @@ To maintain clean code and separation of concerns, the application follows a str
 
 2. Client-Side Only: This project is designed as a strict frontend assessment piece. Therefore, no backend database was implemented. State persistence is entirely handled via localStorage.
 
-# Designed and engineered by Arnab Pachal.
+## Designed and engineered by Arnab Pachal.
