@@ -36,7 +36,6 @@ Make sure you have Node.js (v18 or higher) installed.
 1. **Clone the repository:**
    ```bash
    git clone [https://github.com/yourusername/lumical.git](https://github.com/Arnab-Pachal1234/Interactive_Wall_Callendar)
-   cd my-calendar-app
    npm install
    npm run dev
 2. Navigate to http://localhost:3000 in your browser.
