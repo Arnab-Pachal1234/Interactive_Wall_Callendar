@@ -56,3 +56,5 @@ To maintain clean code and separation of concerns, the application follows a str
 1. Zero Date Libraries: To demonstrate core JavaScript fundamentals, all calendar logic (leap years, first days of the month, date comparisons) is handled using native Date objects rather than relying on heavy libraries like moment.js or date-fns.
 
 2. Client-Side Only: This project is designed as a strict frontend assessment piece. Therefore, no backend database was implemented. State persistence is entirely handled via localStorage.
+
+# Designed and engineered by Arnab Pachal.
