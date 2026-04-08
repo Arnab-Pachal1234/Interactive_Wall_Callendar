@@ -1,36 +1,59 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# 🗓️ LumiCal — Premium Interactive Wall Calendar
 
-## Getting Started
+> A highly interactive, beautifully animated wall calendar component built with Next.js, Framer Motion, and Tailwind CSS. 
 
-First, run the development server:
+![LumiCal Preview](https://via.placeholder.com/1000x500?text=Insert+a+screenshot+of+LumiCal+here)
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+LumiCal transcends the standard date-picker. It is designed to emulate the tactile and aesthetic experience of a physical wall calendar, complete with dynamic seasonal themes, smooth page-turning animations, and a powerful range-based event tracking system.
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+## ✨ Features
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+* **🎨 Dynamic Monthly Themes:** Seamlessly transitions between 12 unique, high-quality Unsplash backgrounds and corresponding accent colors for each month.
+* **✨ Premium 3D UI & Glassmorphism:** Features ambient background glows, multi-layered box shadows, and edge-lighting to create a physical, tactile feel.
+* **📅 Date Range Selection:** Intuitive click-to-select functionality for start and end dates. Selected ranges are visually bridged on the calendar grid.
+* **📝 Persistent Range-Based Notes:** Users can attach color-coded memos to specific date ranges. Notes are automatically persisted to the browser's `localStorage`.
+* **🖱️ Interactive Tooltips:** Hovering over any day reveals a sleek, glassmorphic tooltip detailing all events and notes scheduled for that specific date.
+* **🎬 Fluid Animations:** Powered by Framer Motion. Features direction-aware sliding for the calendar grid and elegant crossfades for the hero images.
+* **📱 Fully Responsive:** Built mobile-first. The split-panel desktop layout gracefully collapses into a vertical stack for smaller viewports.
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+## 🛠️ Tech Stack
 
-## Learn More
+* **Framework:** React 18 / [Next.js](https://nextjs.org/) (App Router)
+* **Styling:** [Tailwind CSS](https://tailwindcss.com/)
+* **Animations:** [Framer Motion](https://www.framer.com/motion/)
+* **Icons:** [Lucide React](https://lucide.dev/)
+* **Data Persistence:** Client-side `localStorage` API
 
-To learn more about Next.js, take a look at the following resources:
+## 🚀 Getting Started
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+To run this project locally, follow these steps:
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### Prerequisites
+Make sure you have Node.js (v18 or higher) installed.
 
-## Deploy on Vercel
+### Installation
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
+1. **Clone the repository:**
+   ```bash
+   git clone [https://github.com/yourusername/lumical.git](https://github.com/yourusername/lumical.git)
+   cd lumical
+   npm install
+   npm run dev
+2. Navigate to http://localhost:3000 in your browser.
+### 🏗️ Architecture & Component Structure
+To maintain clean code and separation of concerns, the application follows a strict Container/Presenter pattern:
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+1. Calendar.jsx: The "smart" parent container managing state, date mathematics, and local storage synchronization.
+
+2. CalendarHero.jsx: Renders the dynamic month image, background glow, and crossfade animations.
+
+3. CalendarHeader.jsx: Manages the typographical header and month-to-month navigation.
+
+4.CalendarGrid.jsx: The core mathematical grid. Handles rendering the days, calculating range overlaps, bridging styles, and displaying hover tooltips.
+
+5.CalendarNotes.jsx: A dual-mode component that switches between viewing saved events and creating new ones.
+
+### Technical Decisions & Scope
+1. Zero Date Libraries: To demonstrate core JavaScript fundamentals, all calendar logic (leap years, first days of the month, date comparisons) is handled using native Date objects rather than relying on heavy libraries like moment.js or date-fns.
+
+2. Client-Side Only: This project is designed as a strict frontend assessment piece. Therefore, no backend database was implemented. State persistence is entirely handled via localStorage.
